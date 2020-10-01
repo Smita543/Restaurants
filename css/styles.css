@@ -121,12 +121,15 @@ body {
 }
 
 #menu-tile, #specials-tile, #map-tile {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
+  height: 25px;
+  /* width: 100%; */
+  top: 15;
+  bottom: 15;
+  left: 15;
+  right: 15;
+  position: fixed;
   border: 2px solid #3F0C1F;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
@@ -154,7 +157,7 @@ body {
 /* END HOME PAGE */
 
 /* MENU CATEGORIES PAGE */
-.category-tile { 
+.category-tile {
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
@@ -163,16 +166,14 @@ body {
   margin: 0 auto 15px;
 }
 .category-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
+  position: relative;
+  bottom: 10px;
   text-align: center;
   font-size: 1.2em;
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
-  opacity: .8;
+  opacity: 0.75;
 }
 .category-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
@@ -201,7 +202,7 @@ body {
 }
 .menu-item-photo {
   position: relative;
-  border: 2px solid #3F0C1F; 
+  border: 2px solid #3F0C1F;
   overflow: hidden;
   padding: 0;
   margin-right: -15px;
@@ -347,14 +348,14 @@ h3.menu-item-title {
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
+@media (max-width: 576px) {
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
     font-size: 6vw;
   }
   /* End Header */
-  
+
   /* Home page */
   #menu-tile, #specials-tile {
     width: 280px;
@@ -370,6 +371,3 @@ h3.menu-item-title {
     width: 100%;
   }
 }
-
-
-
