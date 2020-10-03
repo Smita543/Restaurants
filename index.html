@@ -42,11 +42,11 @@
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
-              <a href="#">
+              <a href="about.html">
                 <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
             <li>
-              <a href="#">
+              <a href="award.html">
                 <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
             </li>
             <li id="phone" class="hidden-xs">
@@ -89,7 +89,7 @@
     <div class="container">
       <div class="row">
 
-        <section id="address" class="col-sm-6">
+
           <span>Address:</span><br>
           7105 Reisterstown Road<br>
           Baltimore, MD 21215
@@ -109,5 +109,19 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+
+  <!-- XHTML element "script" -->
+  <script type="text/javascript">
+  //<![CDATA[
+  var string = "<td>";
+  //]]>
+  </script>
+
+  <!-- Static -->
+  <script>
+  const userInfo = JSON.parse(document.getElementById("data").text);
+  console.log("User information: %o", userInfo);
+  </script>
+  
 </body>
 </html>

@@ -121,11 +121,7 @@ body {
 }
 
 #menu-tile, #specials-tile, #map-tile {
-  height: 250px;
-  width: 100%;
-  margin: 15px;
-  position: absolute;
-  top:50px;
+ 
   border: 2px solid #3F0C1F;
   /* overflow: hidden; */
 }
@@ -165,13 +161,12 @@ body {
 }
 .category-tile span {
   position: relative;
-  width: 100%;
   text-align: center;
   font-size: 1em;
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
-  opacity: .8;
+  opacity: 0.75;
 }
 .category-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
@@ -199,10 +194,7 @@ body {
   font-size: .6em;
 }
 .menu-item-photo {
-  position: absolute;
-  border: 2px solid #3F0C1F;
-  overflow: auto;
-  margin:10px -15px 0px;
+
   max-width: 250px;
 }
 .menu-item-photo div {
@@ -343,7 +335,7 @@ h3.menu-item-title {
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
+@media (max-width: 576px) {
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
