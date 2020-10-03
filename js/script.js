@@ -1,0 +1,3 @@
+$(document).load(
+  window.reload();
+);
